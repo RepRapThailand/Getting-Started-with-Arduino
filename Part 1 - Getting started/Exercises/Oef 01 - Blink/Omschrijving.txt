@@ -1,0 +1,23 @@
+Doel : controleren dat de programmeer-omgeving volledige werkt.
+
+Stap 1 : open de programmeeromgeving
+Stap 2 : open het bestand blink.ino
+Stap 3 : compileer de code
+Stap 4 : laad op naar de Arduino
+Stap 5 : controleer het flikkeren van de ingebouwde LED
+Stap 6 : wijzig de waarden in delay(), zodat het ritme van flikkeren wijzigt, compileer, upload..
+
+Een stap verder : 
+
+Extra 1 : Voeg additionele borden toe aan je Arduino IDE omgeving :
+  * file | preferences | additional Board URL managers
+  * copieer URLs voor ESP8266 en BlendMicro
+  * ga naar Tools | Boards | Boards manager en installeer ESP8266 en BlendMicro
+  * laat 'Blink' lopen op de ESP8266 of BlendMicro
+
+Extra 2 : gebruik CodeBender.cc
+  * maak een account aan
+  * voer 'Getting Started' uit -> installeer de drivers
+  * kies bord en COM-poort (opm ESP8266 is nog niet ondersteund op CodeBender)
+  * laat 'Blink' lopen
+  * zoek een ander projectje en die 'clone & edit'

@@ -1,0 +1,11 @@
+Doelstelling :
+
+* Leren werken met de seriele poort om te debuggen, en om input te sturen naar je bord
+* Een LED en/of Buzzer aansluiten op je Arduino
+* Werken met extra functies en bibliotheken
+
+Stap 1 : sluit een buzzer aan op je Arduino, en pas Blink aan om beepjes te genereren
+Stap 2 : voeg code toe om aan/uit ook naar de seriele poort te sturen en bekijk op de monitor
+Stap 3 : voeg code toe om de input van de seriele poort te lezen, een geef een lange beep bij L, en een korte bij S
+Step 4 : voeg code toe om tekst te lezen van de seriele poort en bijhorende morse-code te laten klinken door de buzzer.
+

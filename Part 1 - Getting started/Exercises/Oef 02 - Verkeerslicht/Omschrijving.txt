@@ -1,0 +1,20 @@
+Doel : 
+* schakelaar inlezen
+* externe LEDs aansluiten
+* serieweerstand dimensioneren
+* begrip pullup-resistor
+* IO's configureren
+* Console gebruiken voor debug-monitoring
+
+Stap 1 : vertrek van blink.ino
+Stap 2 : voeg 3 outputs + 1 input toe
+Stap 3 : begintoestand is rood - groen
+als de schakelaar wordt ingedrukt, start een cyclus :
+
+
+* 1 sec rood  - oranje
+* 1 sec rood  - rood
+* 5 sec groen - rood
+* 1 sec oranje - rood
+* 1 sec rood - rood
+*       rood - groen
