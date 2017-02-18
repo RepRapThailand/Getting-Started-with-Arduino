@@ -1,0 +1,15 @@
+Objectives : 
+
+* analog versus digital
+* read analog inputs
+* analog output witht Pulse Width Modulation - PWM
+* use a transistor to drive a bigger load 
+
+========================================================
+
+Doelstelling :
+
+* Leren werken met de seriele poort om te debuggen, en om input te sturen naar je bord
+* Analoge inputs inlezen
+* Analoge outputs aansturen met Pulse Width Modulation - PWM
+* Eerste kennismaking met MOSFET transistor

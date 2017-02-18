@@ -1,0 +1,36 @@
+Objectives : check the development setup
+
+Step 1 : open the Arduino IDE
+Step 2 : open the example file blink.ino
+Step 3 : compile the code
+Step 4 : download into the Arduino
+Step 5 : check the blinking of the LED
+step 6 : change the values in delay() in order to change the blinking pattern, compile, upload, check
+
+One step further : 
+
+run the Blink example on other boards :
+  * file | preferences | additional Board URL managers
+  * copy URLs voor ESP8266 and Teensy
+  * go to Tools | Boards | Boards manager and install ESP8266 and Teensy
+  * run 'Blink' on one of the other boards
+
+======================================================================================
+
+Doel : controleren dat de programmeer-omgeving volledige werkt.
+
+Stap 1 : open de programmeeromgeving
+Stap 2 : open het bestand blink.ino
+Stap 3 : compileer de code
+Stap 4 : laad op naar de Arduino
+Stap 5 : controleer het flikkeren van de ingebouwde LED
+Stap 6 : wijzig de waarden in delay(), zodat het ritme van flikkeren wijzigt, compileer, upload..
+
+Een stap verder : 
+
+Voeg additionele borden toe aan je Arduino IDE omgeving :
+  * file | preferences | additional Board URL managers
+  * copieer URLs voor ESP8266 en BlendMicro
+  * ga naar Tools | Boards | Boards manager en installeer ESP8266 en BlendMicro
+  * laat 'Blink' lopen op de ESP8266 of BlendMicro
+

@@ -1,0 +1,24 @@
+Objectives :
+
+* Learn to use the Serial port for sending input to your sketch, and send debugging output back
+* Learn to re-use an existing library
+
+Step 1 : take a look at the library to find out how to use it
+Step 2 : add the library to your project
+Step 3 : adjust your main program to use functions in the library
+Step 4 : rewrite the serial-to-morse code using the library
+
+
+==============================================================
+
+Doelstelling :
+
+* Leren werken met de seriele poort om te debuggen, en om input te sturen naar je bord
+* Een LED en/of Buzzer aansluiten op je Arduino
+* Werken met extra functies en bibliotheken
+
+Stap 1 : bestudeer de bibliotheek, welke functies kan je gebruiken en hoe
+Stap 2 : voeg de bibliotheek toe aan je project
+Stap 3 : pas je hoofdprogramma aan om de bibliotheek te gebruiken
+Step 4 : bouw nu een serial-to-morse code programma
+

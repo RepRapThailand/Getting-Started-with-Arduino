@@ -1,0 +1,23 @@
+Objectives :
+
+* Learn to use the Serial port for sending input to your sketch, and send debugging output back
+* Learn to re-use an existing library
+
+Step 1 : connect a buzzer to your Arduino and test with blink
+Step 2 : add code to also send the on / off to the serial port, and monitor it
+Step 3 : add code to read something from the serial port : output a long beep on receiving 'L', a short bip on 'S'
+Step 4 : extend your code to output Morse code on receiving a character on the serial port.
+
+==============================================================
+
+Doelstelling :
+
+* Leren werken met de seriele poort om te debuggen, en om input te sturen naar je bord
+* Een LED en/of Buzzer aansluiten op je Arduino
+* Werken met extra functies en bibliotheken
+
+Stap 1 : sluit een buzzer aan op je Arduino, en pas Blink aan om beepjes te genereren
+Stap 2 : voeg code toe om aan/uit ook naar de seriele poort te sturen en bekijk op de monitor
+Stap 3 : voeg code toe om de input van de seriele poort te lezen, een geef een lange beep bij L, en een korte bij S
+Step 4 : voeg code toe om tekst te lezen van de seriele poort en bijhorende morse-code te laten klinken door de buzzer.
+

@@ -1,0 +1,4 @@
+Doelstelling : 
+* aansluiten van een 'standaard' 16*2 LCD
+* gebruiken van de LiquidCrystal bibliotheek
+* leren om tekst weer te geven op het display

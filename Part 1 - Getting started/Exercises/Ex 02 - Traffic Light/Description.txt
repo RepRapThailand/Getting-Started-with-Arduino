@@ -1,0 +1,35 @@
+Objective
+
+* read digital values from a switch
+* connect external LEDs
+* dimension a series resistor
+* what is a pullup resistor
+* how to configure IOs
+* use the serial console for debugging
+
+Step 1 : start from Blink.ino
+Step 2 : add 5 outputs + 1 input
+Step 3 : read button - when pressed go through a cycle of
+
+==========================================================================
+
+Doel : 
+* schakelaar inlezen
+* externe LEDs aansluiten
+* serieweerstand dimensioneren
+* begrip pullup-resistor
+* IO's configureren
+* Console gebruiken voor debug-monitoring
+
+Stap 1 : vertrek van blink.ino
+Stap 2 : voeg 5 outputs + 1 input toe
+Stap 3 : begintoestand is rood - groen
+als de schakelaar wordt ingedrukt, start een cyclus :
+
+
+* 1 sec rood  - oranje
+* 1 sec rood  - rood
+* 5 sec groen - rood
+* 1 sec oranje - rood
+* 1 sec rood - rood
+*       rood - groen
