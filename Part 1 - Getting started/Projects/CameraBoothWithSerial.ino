@@ -9,8 +9,8 @@ void LED(uint8_t kleur, bool aanUit)
     }
 
 
-    // ### CAMERA ###
-#define CAMERA 1
+// ### CAMERA ###
+#define CAMERA 2
 
 void foto(bool aanUit)
     {
@@ -44,6 +44,7 @@ uint8_t toestand;                                       // variabele die de toes
 
 void setup()
     {
+    Serial.begin(38400);                                // start seriele communicatie aan 38400 bits/seconde
     pinMode(GROEN, OUTPUT);                             // zet deze pin als Output
     pinMode(ORANJE, OUTPUT);                            // zet deze pin als Output
     pinMode(ROOD, OUTPUT);                              // zet deze pin als Output
@@ -58,7 +59,7 @@ void setup()
     foto(false);                                        // laat de sluiterknop los,
 
     teller = 0;                                         // begintoestand - initialiseer...
-    toestand = KLAAR;
+    toestand = WACHT;
     }
 
 void loop()
@@ -72,6 +73,7 @@ void loop()
             if (beweging())
                 {
                 toestand = AFTELLEN;                    // als er beweging gedetecteerd wordt (tijdens toestand KLAAR) start het aftellen
+                Serial.println("Aftellen begonnen");
                 }
             break;
 
@@ -84,39 +86,63 @@ void loop()
                     LED(GROEN, false);                  // zet groene LED uit
                     LED(ORANJE, true);                  // zet oranje LED aan
                     break;
-
                 case 10:
-                case 20:
-                case 30:
-                case 40:
-                case 50:
-                case 60:
+                    Serial.print("9 ");
                     beep(true);                         // elke seconde : zet de beeper aan
                     break;
-
+                case 20:
+                    Serial.print("8 ");
+                    beep(true);                         // elke seconde : zet de beeper aan
+                    break;
+                case 30:
+                    Serial.print("7 ");
+                    beep(true);                         // elke seconde : zet de beeper aan
+                    break;
+                case 40:
+                    Serial.print("6 ");
+                    beep(true);                         // elke seconde : zet de beeper aan
+                    break;
+                case 50:
+                    Serial.print("5 ");
+                    beep(true);                         // elke seconde : zet de beeper aan
+                    break;
+                case 60:
+                    Serial.print("4 ");
+                    beep(true);                         // elke seconde : zet de beeper aan
+                    break;
                 case 70:
+                    Serial.print("3 ");
                     LED(ORANJE, false);                 // na 7 seconden : oranje led UIT
                     LED(ROOD, true);                    // RODE led AAN
                     beep(true);                         //
                     break;
-
                 case 75:
+                    beep(true);                         // van seconde 7 tot 10 komen de beepjes om de halve seconde, ipv om de seconde
+                    break;
                 case 80:
+                    Serial.print("2 ");
+                    beep(true);                         // van seconde 7 tot 10 komen de beepjes om de halve seconde, ipv om de seconde
+                    break;
                 case 85:
+                    beep(true);                         // van seconde 7 tot 10 komen de beepjes om de halve seconde, ipv om de seconde
+                    break;
                 case 90:
+                    Serial.print("1 ");
+                    beep(true);                         // van seconde 7 tot 10 komen de beepjes om de halve seconde, ipv om de seconde
+                    break;
                 case 95:
                     beep(true);                         // van seconde 7 tot 10 komen de beepjes om de halve seconde, ipv om de seconde
                     break;
-
                 case 100:
+                    Serial.println("Foto!");
                     foto(true);                         // 10 seconden : maak nu de foto : sluit de sluiter
                     break;
-
                 case 103:                               // 300 ms later :
                     foto(false);                        // laat de sluiterknop los,
                     LED(ROOD, false);                   // rode LED uit
                     toestand = WACHT;                   // klaar met aftellen, nu naar toestand WACHTen op geen beweging
                     teller = 0;                         // teller terug op 0, om 5 seconden geen beweging te meten
+                    Serial.println("Wachten...");
                     break;
                 }
             break;
@@ -130,6 +156,7 @@ void loop()
             if (teller > 50)                            // 5 seconden geen beweging...
                 {
                 toestand = KLAAR;                       // terug naar beginstoestand.
+                Serial.println("Klaar");
                 }
             break;
         }
